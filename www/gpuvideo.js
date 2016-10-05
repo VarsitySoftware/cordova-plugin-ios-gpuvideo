@@ -1,17 +1,28 @@
-var argscheck = require('cordova/argscheck'),
-    exec = require('cordova/exec');
-	
-var GPUImageExport = {};
+/*global cordova,window,console*/
+/**
+ * A Social Sharing for Twitter plugin for Cordova
+ * 
+ * Developed by John Weaver for Varsity Software
+ */
 
-GPUImageExport.takePicture = function(successCallback, errorCallback, options) {
-	argscheck.checkArgs('fFO', 'GPUImageExport.takePicture', arguments);
-    options = options || {};
-	var getValue = argscheck.getValue;
-	
-	var saveToPhotoAlbum = !!options.saveToPhotoAlbum;
-	
-	var args = [saveToPhotoAlbum];
 
-    exec(successCallback, errorCallback, "CDVGPUImage", "takePicture", args);
-    
-};
+var GPUVideo = function ()
+    {
+
+    };
+
+    GPUVideo.prototype.playVideo = function (success, fail, options)
+    {
+        if (!options) {
+            options = {};
+        }
+
+        var params = {
+            fileURL: options.fileURL ? options.fileURL : null,
+        };
+
+        return cordova.exec(success, fail, "GPUVideo", "playVideo", [params]);
+
+    };
+
+    window.gpuVideo = new GPUVideo();
