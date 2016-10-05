@@ -56,7 +56,7 @@
 		 <framework src="UIKit.framework" />
 		 <framework src="AVFoundation.framework" />
 		 <framework src="Foundation.framework" />
-         <framework src="src/ios/GPUImage.framwork" custom="true"/>
+         <framework src="src/ios/GPUImage.framework" custom="true"/>
          
          <!-->
          <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
