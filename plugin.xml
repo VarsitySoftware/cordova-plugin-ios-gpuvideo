@@ -30,7 +30,7 @@
     <repo>https://github.com/VarsitySoftware/cordova-plugin-ios-gpuvideo.git</repo>
 
     <js-module src="www/gpuvideo.js" name="GPUVideo">
-        <clobbers target="GPUVideo" />
+        <clobbers target="plugins.gpuVideo" />
     </js-module>
 
      <hook type="after_platform_add" src="src/ios/hooks/embedframework/addEmbedded.js" />
