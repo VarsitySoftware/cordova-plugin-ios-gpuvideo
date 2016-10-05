@@ -39,7 +39,7 @@
      <platform name="ios">
          <config-file target="config.xml" parent="/*">
              <feature name="GPUVideo">
-                 <param name="ios-package" value="CDVGPUVideo" />
+                 <param name="ios-package" value="GPUVideo" />
              </feature>
          </config-file>
 
