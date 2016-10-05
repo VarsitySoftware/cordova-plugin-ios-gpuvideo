@@ -8,10 +8,10 @@
 
 #import <Cordova/CDVPlugin.h>
 
-@interface DeleteFiles : CDVPlugin < UINavigationControllerDelegate, UIScrollViewDelegate>
+@interface GPUVideo : CDVPlugin < UINavigationControllerDelegate, UIScrollViewDelegate>
 
 @property (copy)   NSString* callbackId;
 
-- (void)sendTweet:(CDVInvokedUrlCommand *)command;
+- (void)playVideo:(CDVInvokedUrlCommand *)command;
 
 @end
