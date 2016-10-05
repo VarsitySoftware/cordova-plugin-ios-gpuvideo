@@ -5,7 +5,7 @@
 //
 //
 
-#import "SocialSharingTwitter.h"
+#import "GPUVideo.h"
 #import <Accounts/Accounts.h>
 
 @implementation SocialSharingTwitter 
