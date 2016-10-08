@@ -32,9 +32,7 @@
     <js-module src="www/gpuvideo.js" name="GPUVideo">
         <clobbers target="plugins.gpuVideo" />
     </js-module>
-
-     <hook type="after_platform_add" src="src/ios/hooks/embedframework/addEmbedded.js" />
-        
+     
      <!-- ios -->
      <platform name="ios">
          <config-file target="config.xml" parent="/*">
@@ -51,13 +49,13 @@
          <framework src="AssetsLibrary.framework" />
          <framework src="MobileCoreServices.framework" />
          <framework src="CoreGraphics.framework" />
-		 <framework src="CoreMedia.framework" />
-		 <framework src="CoreVideo.framework" />
-		 <framework src="OpenGLES.framework" />
-		 <framework src="QuartzCore.framework" />
-		 <framework src="UIKit.framework" />
-		 <framework src="AVFoundation.framework" />
-		 <framework src="Foundation.framework" />
+	 <framework src="CoreMedia.framework" />
+	 <framework src="CoreVideo.framework" />
+	 <framework src="OpenGLES.framework" />
+	 <framework src="QuartzCore.framework" />
+	 <framework src="UIKit.framework" />
+	 <framework src="AVFoundation.framework" />
+	 <framework src="Foundation.framework" />
          <framework src="src/ios/GPUImage.framework" custom="true"/>
          
          <!-->
