@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-ios-gpuvideo.GPUVideo", function(require, exports, module) {
 /*global cordova,window,console*/
 /**
  * A Social Sharing for Twitter plugin for Cordova
@@ -11,18 +12,38 @@ var GPUVideo = function ()
 
     };
 
-    GPUVideo.prototype.playVideo = function (success, fail, options)
+    GPUVideo.prototype.startVideo = function (success, fail, options)
     {
         if (!options) {
             options = {};
         }
 
         var params = {
-            fileURL: options.fileURL ? options.fileURL : null,
+            videoURL: options.videoURL ? options.videoURL : null,
         };
 
-        return cordova.exec(success, fail, "GPUVideo", "playVideo", [params]);
+        return cordova.exec(success, fail, "GPUVideo", "startVideo", [params]);
+
+    };
+
+    GPUVideo.prototype.pauseVideo = function (success, fail, options)
+    {
+        return cordova.exec(success, fail, "GPUVideo", "pauseVideo", null);
+
+    };
+
+    GPUVideo.prototype.playVideo = function (success, fail, options)
+    {
+        return cordova.exec(success, fail, "GPUVideo", "playVideo", null);
+
+    };
+
+    GPUVideo.prototype.stopVideo = function (success, fail, options)
+    {
+        return cordova.exec(success, fail, "GPUVideo", "stopVideo", null);
 
     };
 
     window.gpuVideo = new GPUVideo();
+
+});
