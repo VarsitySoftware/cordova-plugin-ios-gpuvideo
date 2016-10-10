@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-ios-gpuvideo.GPUVideo", function(require, exports, module) {
 /*global cordova,window,console*/
 /**
  * A Social Sharing for Twitter plugin for Cordova
@@ -45,5 +44,3 @@ var GPUVideo = function ()
     };
 
     window.gpuVideo = new GPUVideo();
-
-});
