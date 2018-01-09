@@ -1,0 +1,20 @@
+{
+    "version": "0.0.1",
+    "name": "cordova-ios-gpuvideo",
+    "cordova_name": "IOS GPU Video",
+    "description": "IOS GPU Video",
+    "license": "MIT",
+    "repo": "https://github.com/VarsitySoftware/cordova-plugin-ios-gpuvideo.git",
+    "keywords": [
+        "cordova",
+        "ios",
+        "UIStatusBarHidden",
+        "UIViewControllerBasedStatusBarAppearance",
+        "ios9"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
